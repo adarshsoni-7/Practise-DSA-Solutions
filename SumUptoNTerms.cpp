@@ -11,10 +11,10 @@ int main()
     cin >> n;
 
     // ----------------------- Approach 1 (Using loop) -----------------------
-    // for (int i = 1; i <= n; i += 1)
-    // {
-    //     totalSum += i;
-    // }
+    for (int i = 1; i <= n; i += 1)
+    {
+        totalSum += i;
+    }
 
     // ----------------------- Approach 2 (Using formula) -----------------------
     totalSum = n * (n + 1) / 2;
