@@ -19,3 +19,6 @@ int main()
 
     return 0;
 }
+
+
+/* The intution is very straight-forward that we keep extracting last digit by moduling num by 10 and priting and by divind it with 10 we get the  rest of the numeer. */
