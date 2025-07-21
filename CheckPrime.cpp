@@ -37,53 +37,53 @@ int main()
 
     // // ---------------------- Approach 2: Better ne - Check only up to n/2 ----------------------
 
-    if (n <= 1)
-    {
-        cout << n << " is  a prime number";
-        return 0;
-    }
-
-    bool isPrime = true;
-
-    for (int i = 2; i <= n / 2; i++)
-    {
-        if (n % i == 0)
-        {
-            isPrime = false;
-            break;
-        }
-    }
-
-    if (isPrime)
-    {
-        cout << "Prime Number";
-    }
-    else
-    {
-        cout << "Not a prime number";
-    }
-
-    // // ---------------------- Approach 3: Optimized - Check only up to √n ----------------------
-
     // if (n <= 1)
     // {
     //     cout << n << " is  a prime number";
     //     return 0;
     // }
 
-    // for (int i = 2; i <= sqrt(n); i++)
+    // bool isPrime = true;
+
+    // for (int i = 2; i <= n / 2; i++)
     // {
     //     if (n % i == 0)
     //     {
-    //         cout << n << " is not a prime number";
-    //         return 0;
+    //         isPrime = false;
+    //         break;
     //     }
     // }
 
-    // cout << n << " is a prime number";
+    // if (isPrime)
+    // {
+    //     cout << "Prime Number";
+    // }
+    // else
+    // {
+    //     cout << "Not a prime number";
+    // }
 
-    return 0;
-}
+    // // ---------------------- Approach 3: Optimized - Check only up to √n ----------------------
+
+//     if (n <= 1) {cout << "Not prime number"; return 0;}
+//     if(n == 2) {cout << "Prime number"; return 0;}
+
+//     if(n % 2 == 0) {cout << "Not prime number"; return 0;}
+    
+
+//     for (int i = 3; i <= sqrt(n); i += 2)
+//     {
+//         if (n % i == 0)
+//         {
+//             cout << n << " is not a prime number";
+//             return 0;
+//         }
+//     }
+
+//     cout << n << " is a prime number";
+
+//     return 0;
+// }
 
 /*
 ----------------------------------------------------------------------------------------------------
@@ -114,6 +114,7 @@ So if no number between 2 and n/2 divides n, then n must be prime.
 - Time Complexity: O(n/2)
 
 🟢 Approach 3: Optimized using Square Root
+- A number is NOT prime if it is divisible by 2 initially.
 - A number is NOT prime if it is divisible by any number from 2 to √n.
 - So instead of checking till n, we check only up to sqrt(n), which is much faster.
 - If any number in this range divides `n`, then it's not prime.

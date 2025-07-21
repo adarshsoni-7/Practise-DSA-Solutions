@@ -44,6 +44,15 @@ int main()
         divisor = divisor / 10;
     }
 
+    // ======================================                    Approach 2                 ================================================
+
+    while (num > 0)
+    {
+        int lastDigit = num % 10;
+        // this gives digits as 3 → 2 → 1 → reverse order
+        num = num / 10;
+    }
+
     return 0;
 }
 
