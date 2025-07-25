@@ -1,31 +1,4 @@
-//  ------------------------------             Before jumping into the code, please try it yourself first  -----------------------------
-
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    int n;
-
-    int evenSum = 0, oddSum = 0;
-
-    cout << "Upto which number you want to see even and odd and then thier sum: ";
-
-    cin >> n;
-
-    for (int i = 1; i <= n; i += 1)
-    {
-        if (i % 2 == 0)
-            evenSum += i;
-        else
-            oddSum += i;
-    }
-
-    cout << "The sum of all even numbers till given num is: " << evenSum << " and of odd is: " << oddSum << endl;
-
-    return 0;
-}
-
+ 
 /*
 ------------------------------------  EXPLANATION  ------------------------------------
 
