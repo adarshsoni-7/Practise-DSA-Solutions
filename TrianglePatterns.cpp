@@ -163,7 +163,7 @@ int main()
          cout << " ";
       }
 
-      cout << "*";
+      cout << " *";
 
       for (int k = 1; k <= (2 * (n - i) - 1); k++)
       {
@@ -177,12 +177,36 @@ int main()
    }
 
    /*
-   Explanation:
-   This pattern creates a cross-like shape with stars.
-   The first loop (i) runs from 1 to n (number of rows).
-   The first inner loop (j) runs from 1 to i - 1 (number of spaces before the first star).
-   The second inner loop (k) runs from 1 to (2 * (n - i) - 1) (number of spaces between the two stars).
-   The second star is printed only if it's not the last row.
-   */
+  Explanation:
+  This pattern creates a V pattern with stars.
+  The first loop (i) runs from 1 to n (number of rows).
+  The first inner loop (j) runs from 1 to i - 1 (number of spaces before the first star).
+  The second inner loop (k) runs from 1 to (2 * (n - i) - 1) (number of spaces between the two stars).
+  The second star is printed only if it's not the last row.
+  */
+
+   for (int i = n; i >= 1; i--)
+   {
+
+      for (int j = 1; j < i; j++)
+      {
+         cout << " ";
+      }
+
+      cout << " *";
+
+      for (int k = 1; k <= (2 * (n - i) - 1); k++)
+      {
+         cout << " ";
+      }
+
+      if (i != n)
+         cout << "*"; // Print second star only if it's not the last row
+
+      cout << endl;
+   }
+
+   /*Merge V pattern and reverse V pattern = X Pattern*/
+
    return 0;
 }
