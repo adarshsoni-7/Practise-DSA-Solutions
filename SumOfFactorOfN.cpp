@@ -10,7 +10,6 @@ int main()
 
     cin >> n;
 
-
     for (int i = 1; i <= n; i++)
     {
         if (n % i == 0)
@@ -21,11 +20,9 @@ int main()
     }
     cout << endl;
 
-
     cout << "The addition of factors of given number is: " << sumOfFactors << endl;
 
     return 0;
 }
-
 
 // Explaination of how to find the factorial of a number by three approaches is in the FactorOfN.cpp file and here is the only its addition & nothing more.

@@ -65,25 +65,24 @@ int main()
 
     // // ---------------------- Approach 3: Optimized - Check only up to √n ----------------------
 
-//     if (n <= 1) {cout << "Not prime number"; return 0;}
-//     if(n == 2) {cout << "Prime number"; return 0;}
+    //     if (n <= 1) {cout << "Not prime number"; return 0;}
+    //     if(n == 2) {cout << "Prime number"; return 0;}
 
-//     if(n % 2 == 0) {cout << "Not prime number"; return 0;}
-    
+    //     if(n % 2 == 0) {cout << "Not prime number"; return 0;}
 
-//     for (int i = 3; i <= sqrt(n); i += 2)
-//     {
-//         if (n % i == 0)
-//         {
-//             cout << n << " is not a prime number";
-//             return 0;
-//         }
-//     }
+    //     for (int i = 3; i <= sqrt(n); i += 2)
+    //     {
+    //         if (n % i == 0)
+    //         {
+    //             cout << n << " is not a prime number";
+    //             return 0;
+    //         }
+    //     }
 
-//     cout << n << " is a prime number";
+    //     cout << n << " is a prime number";
 
-//     return 0;
-// }
+    //     return 0;
+}
 
 /*
 ----------------------------------------------------------------------------------------------------
